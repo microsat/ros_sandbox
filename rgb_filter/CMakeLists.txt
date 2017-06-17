@@ -13,8 +13,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   sensor_msgs
   std_msgs
-  
-)
+  roscpp
+  )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -97,6 +97,7 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 generate_dynamic_reconfigure_options(
  cfg/RGBFilter.cfg
+ #...
 )
 ###################################
 ## catkin specific configuration ##

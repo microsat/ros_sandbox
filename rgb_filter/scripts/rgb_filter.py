@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# filter.py
 
 import rospy
 import cv2
