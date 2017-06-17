@@ -8,10 +8,12 @@ project(rgb_filter)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  dynamic_reconfigure
   cv_bridge
   rospy
   sensor_msgs
   std_msgs
+  
 )
 
 ## System dependencies are found with CMake's conventions
@@ -93,7 +95,9 @@ find_package(catkin REQUIRED COMPONENTS
 #   cfg/DynReconf1.cfg
 #   cfg/DynReconf2.cfg
 # )
-
+generate_dynamic_reconfigure_options(
+ cfg/RGBFilter.cfg
+)
 ###################################
 ## catkin specific configuration ##
 ###################################
