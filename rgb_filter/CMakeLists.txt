@@ -114,7 +114,9 @@ catkin_package(
 #  CATKIN_DEPENDS cv_bridge rospy sensor_msgs std_msgs
 #  DEPENDS system_lib
 )
+catkin_package(DEPENDS)
 
+catkin_package(CATKIN_DEPENDS dynamic_reconfigure)
 ###########
 ## Build ##
 ###########
